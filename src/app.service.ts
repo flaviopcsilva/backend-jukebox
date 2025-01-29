@@ -7,7 +7,7 @@ export class AppService implements OnModuleInit {
     setInterval(async () => {
       try {
         // Enviar um "ping" para a rota /health para garantir que a API está ativa
-        await axios.get('http://localhost:3000/health');
+        await axios.get('https://backend-jukebox.onrender.com/health');
         console.log('Ping enviado para manter a API ativa');
       } catch (error) {
         console.error('Erro ao enviar ping:', error);
